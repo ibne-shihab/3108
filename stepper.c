@@ -1,0 +1,21 @@
+void main() {
+    TRISB=0;
+    portb=0x00;
+    while(1){
+      portb.f0=0xff;
+      portb.f1=0xff;
+      portb.f2=0x00;
+      portb.f3=0x00;
+      delay_ms(1000);
+      portb.f0=0xff;
+      portb.f1=0x00;
+      portb.f2=0x00;
+      portb.f3=0x00;
+      delay_ms(1000);
+      portb.f0=0xff;
+      portb.f1=0x00;
+      portb.f2=0x00;
+      portb.f3=0xff;
+      delay_ms(1000);
+    }
+ }
